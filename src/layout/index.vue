@@ -1,7 +1,7 @@
 <template>
   <div class="app-wrapper">
     <div class="sidebar-container">
-      <h4>我是侧边栏</h4>
+      <Sidebar></Sidebar>
     </div>
     <div class="main-container">
       <router-view/>
@@ -10,8 +10,11 @@
 </template>
 
 <script>
+import Sidebar from "@/layout/Sidebar";
+
 export default {
-  name: "index"
+  name: "index",
+  components: {Sidebar}
 }
 </script>
 
